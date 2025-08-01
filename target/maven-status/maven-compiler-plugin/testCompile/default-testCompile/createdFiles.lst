@@ -1,2 +1,8 @@
 com\suite\test\Leccion2_SeleniumIDETest.class
+com\suite\test\RegistrationDataProvider.class
+com\suite\test\Leccion7_MultiplesDatosTest.class
+com\suite\test\TestListener.class
+com\suite\test\Leccion3_FlujoCriticoTest.class
+com\suite\test\BaseTest.class
+com\suite\test\DataProviderClass.class
 com\suite\test\Leccion1_ValidacionInicialTest.class

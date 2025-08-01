@@ -46,16 +46,19 @@ A continuación se detallan los pasos para clonar, compilar y probar el proyecto
 ## 3. Desarrollo del Proyecto (Paso a Paso)
 
 A continuación se describe el progreso por cada lección del módulo.
+**Josselyn Vega**: encargada de Lecciones 1 y 2 e integración del proyecto
+**Viki Borda**: encargada de lecciones 3 a 7
 
-### Lección 1: Testing Funcional con Selenium (Realizado por Viki Borda)
+### Lección 1: Testing Funcional con Selenium 
 
 *   **Objetivo:** Comprender los fundamentos de Selenium y validar la instalación del entorno.
-*   **Métrica:** Mínimo 1 prueba ejecutada con éxito.
+*   **Métricas Cumplidas:**
+    *   `[X]` **1 prueba ejecutada:** Se realiza 1 prueba ejecutada con éxito.
 *   **Resultado:** Esta sección fue completada por la compañera de equipo.
 
 ---
 
-### Lección 2: Prototipado con Selenium IDE (Realizado por Josselyn Vega)
+### Lección 2: Prototipado con Selenium IDE 
 
 *   **Objetivo:** Capturar flujos básicos de forma rápida utilizando una herramienta de grabación y reproducción para futuras pruebas detalladas.
 
@@ -78,3 +81,24 @@ A continuación se describe el progreso por cada lección del módulo.
     *   La clase de prueba funcional se encuentra en `src/test/java/com/suite/test/Leccion2_SeleniumIDETest.java`.
 
 ---
+### Lección 3: Automatización de Flujos Críticos (Clase: `Leccion3_FlujoCriticoTest.java`)
+*   **Objetivo:** Validar los flujos de registro y login ante distintos escenarios.
+*   **Métricas Cumplidas:** Se automatizaron 4 escenarios de registro utilizando un DataProvider (`RegistrationDataProvider.java`), cubriendo casos de éxito, contraseña insegura, contraseñas no coincidentes y email inválido.
+
+### Lección 4: Interacción con Elementos Web
+*   **Objetivo:** Dominar la interacción con distintos tipos de elementos y su sincronización.
+*   **Evidencia:** La implementación del Page Object Model en las clases `LoginPage.java` y `RegisterPage.java` demuestra el uso de múltiples localizadores (`By.xpath`, `By.cssSelector`) y esperas explícitas (`WebDriverWait`) para interactuar de forma robusta con la aplicación.
+
+### Lección 5: Evidencias y Estructura POM
+*   **Objetivo:** Organizar el código bajo el patrón POM y capturar resultados de ejecución.
+*   **Métricas Cumplidas:**
+    *   `[X]` **Estructura POM:** Se implementaron 3 clases de página (`HomePage`, `LoginPage`, `RegisterPage`) que encapsulan la lógica de interacción.
+    *   `[X]` **Captura de Pantallas:** Se implementó un `TestListener` (`TestListener.java`) que toma una captura de pantalla automáticamente cada vez que una prueba falla, guardándola en la carpeta `/screenshots`.
+
+### Lección 6: Ejecución Cross-Browser
+*   **Objetivo:** Ejecutar las pruebas en distintos navegadores.
+*   **Evidencia:** La clase `BaseTest.java` utiliza `WebDriverManager` y la anotación `@Parameters` para permitir la ejecución de pruebas en diferentes navegadores. El archivo `testing.xml` está configurado para lanzar las pruebas de login tanto en Chrome como en Firefox.
+
+### Lección 7: Pruebas con Múltiples Datos (Clase: `Leccion7_MultiplesDatosTest.java`)
+*   **Objetivo:** Parametrizar pruebas usando datos externos.
+*   **Métricas Cumplidas:** La prueba de login se ejecuta utilizando un `DataProvider` (`DataProviderClass.java`) que provee múltiples combinaciones de credenciales para validar escenarios de éxito y de fallo.

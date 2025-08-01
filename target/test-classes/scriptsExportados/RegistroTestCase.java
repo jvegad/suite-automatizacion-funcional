@@ -1,5 +1,6 @@
-package com.example;
+package scriptsExportados;
 
+/*
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
@@ -9,9 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import java.io.File;
 import org.apache.commons.io.FileUtils;
-
-public class UntitledTestCase {
-
+ */
+public class RegistroTestCase {
+    /* 
     private WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
@@ -34,7 +35,7 @@ public class UntitledTestCase {
         driver.findElement(By.name("name")).clear();
         driver.findElement(By.name("name")).sendKeys("test");
         driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/input[3]")).clear();
-        driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/input[3]")).sendKeys("testuser6622@test.com");
+        driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/input[3]")).sendKeys("testuser54320@test.com");
         driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/button")).click();
         driver.get("https://www.automationexercise.com/signup");
         driver.findElement(By.id("id_gender2")).click();
@@ -113,5 +114,5 @@ public class UntitledTestCase {
         } finally {
             acceptNextAlert = true;
         }
-    }
+    }*/
 }

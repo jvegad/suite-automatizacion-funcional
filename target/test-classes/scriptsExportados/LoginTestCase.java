@@ -1,4 +1,4 @@
-package resources.scriptsExportados;
+package scriptsExportados;
 
 /*
 import java.util.concurrent.TimeUnit;

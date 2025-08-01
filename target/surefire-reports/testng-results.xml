@@ -1,43 +1,461 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-31T21:10:16 GMT-03:00" name="Surefire suite" finished-at="2025-07-31T21:10:56 GMT-03:00" duration-ms="40046">
+  <suite started-at="2025-07-31T22:56:58 GMT-03:00" name="AlkemyFunctionalSuite" finished-at="2025-07-31T22:59:16 GMT-03:00" duration-ms="138035">
     <groups>
     </groups>
-    <test started-at="2025-07-31T21:10:16 GMT-03:00" name="Surefire test" finished-at="2025-07-31T21:10:56 GMT-03:00" duration-ms="40046">
-      <class name="com.suite.test.Leccion2_SeleniumIDETest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@71c8becc]" started-at="2025-07-31T21:10:23 GMT-03:00" name="setUp" finished-at="2025-07-31T21:10:32 GMT-03:00" duration-ms="9010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginTestCase()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@71c8becc]" started-at="2025-07-31T21:10:32 GMT-03:00" name="LoginTestCase" finished-at="2025-07-31T21:10:41 GMT-03:00" duration-ms="9320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTestCase -->
-        <test-method signature="registroTestCase()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@71c8becc]" started-at="2025-07-31T21:10:41 GMT-03:00" name="registroTestCase" finished-at="2025-07-31T21:10:54 GMT-03:00" duration-ms="12906" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registroTestCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@71c8becc]" started-at="2025-07-31T21:10:54 GMT-03:00" name="tearDown" finished-at="2025-07-31T21:10:56 GMT-03:00" duration-ms="2059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.suite.test.Leccion2_SeleniumIDETest -->
+    <test started-at="2025-07-31T22:56:58 GMT-03:00" name="Leccion1_Validacion_Inicial" finished-at="2025-07-31T22:57:08 GMT-03:00" duration-ms="10279">
       <class name="com.suite.test.Leccion1_ValidacionInicialTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suite.test.Leccion1_ValidacionInicialTest@240237d2]" started-at="2025-07-31T21:10:16 GMT-03:00" name="setUp" finished-at="2025-07-31T21:10:21 GMT-03:00" duration-ms="4348" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suite.test.Leccion1_ValidacionInicialTest@12e61fe6]" started-at="2025-07-31T22:56:58 GMT-03:00" name="setUp" finished-at="2025-07-31T22:57:06 GMT-03:00" duration-ms="8084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validarTituloDeGoogle()[pri:0, instance:com.suite.test.Leccion1_ValidacionInicialTest@240237d2]" started-at="2025-07-31T21:10:21 GMT-03:00" name="validarTituloDeGoogle" description="Validar que el título de la página de Google sea correcto" finished-at="2025-07-31T21:10:22 GMT-03:00" duration-ms="1538" status="PASS">
+        <test-method signature="validarTituloDeGoogle()[pri:0, instance:com.suite.test.Leccion1_ValidacionInicialTest@12e61fe6]" started-at="2025-07-31T22:57:06 GMT-03:00" name="validarTituloDeGoogle" description="Validar que el título de la página de Google sea correcto" finished-at="2025-07-31T22:57:07 GMT-03:00" duration-ms="1385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarTituloDeGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion1_ValidacionInicialTest@240237d2]" started-at="2025-07-31T21:10:22 GMT-03:00" name="tearDown" finished-at="2025-07-31T21:10:23 GMT-03:00" duration-ms="751" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion1_ValidacionInicialTest@12e61fe6]" started-at="2025-07-31T22:57:07 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:57:08 GMT-03:00" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.suite.test.Leccion1_ValidacionInicialTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Leccion1_Validacion_Inicial -->
+    <test started-at="2025-07-31T22:57:08 GMT-03:00" name="Leccion2_Scripts_Exportados" finished-at="2025-07-31T22:57:43 GMT-03:00" duration-ms="34934">
+      <class name="com.suite.test.Leccion2_SeleniumIDETest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@6ca8564a]" started-at="2025-07-31T22:57:08 GMT-03:00" name="setUp" finished-at="2025-07-31T22:57:19 GMT-03:00" duration-ms="10384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginTestCase()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@6ca8564a]" started-at="2025-07-31T22:57:19 GMT-03:00" name="LoginTestCase" finished-at="2025-07-31T22:57:29 GMT-03:00" duration-ms="10156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestCase -->
+        <test-method signature="registroTestCase()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@6ca8564a]" started-at="2025-07-31T22:57:29 GMT-03:00" name="registroTestCase" finished-at="2025-07-31T22:57:41 GMT-03:00" duration-ms="12465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registroTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion2_SeleniumIDETest@6ca8564a]" started-at="2025-07-31T22:57:41 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:57:43 GMT-03:00" duration-ms="1925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.suite.test.Leccion2_SeleniumIDETest -->
+    </test> <!-- Leccion2_Scripts_Exportados -->
+    <test started-at="2025-07-31T22:57:43 GMT-03:00" name="Leccion3_Flujo_Critico" finished-at="2025-07-31T22:58:27 GMT-03:00" duration-ms="44073">
+      <class name="com.suite.test.Leccion3_FlujoCriticoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:43 GMT-03:00" name="setUp" finished-at="2025-07-31T22:57:47 GMT-03:00" duration-ms="3838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:47 GMT-03:00" name="init" finished-at="2025-07-31T22:57:47 GMT-03:00" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:47 GMT-03:00" name="testRegistration" data-provider="registrationData" finished-at="2025-07-31T22:57:54 GMT-03:00" duration-ms="6723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[María Díaz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maria+1754013463692@mail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abc123!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abc123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[29211443-5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[47645962-1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[registro exitoso]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:54 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:57:55 GMT-03:00" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:55 GMT-03:00" name="setUp" finished-at="2025-07-31T22:57:57 GMT-03:00" duration-ms="2321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:57 GMT-03:00" name="init" finished-at="2025-07-31T22:57:57 GMT-03:00" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:57:57 GMT-03:00" name="testRegistration" data-provider="registrationData" finished-at="2025-07-31T22:58:04 GMT-03:00" duration-ms="7094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ana Gómez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ana+1754013463692@mail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[39111183-9]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[78472645-2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[contraseña insegura]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:04 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:58:05 GMT-03:00" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:05 GMT-03:00" name="setUp" finished-at="2025-07-31T22:58:08 GMT-03:00" duration-ms="3276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:08 GMT-03:00" name="init" finished-at="2025-07-31T22:58:09 GMT-03:00" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:09 GMT-03:00" name="testRegistration" data-provider="registrationData" finished-at="2025-07-31T22:58:16 GMT-03:00" duration-ms="7097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Luis Soto]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[luis+1754013463692@mail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abc123!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Xyz987!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[63086656-1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[13030180-0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[no coinciden]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:16 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:58:16 GMT-03:00" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:16 GMT-03:00" name="setUp" finished-at="2025-07-31T22:58:19 GMT-03:00" duration-ms="3149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:19 GMT-03:00" name="init" finished-at="2025-07-31T22:58:20 GMT-03:00" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String)[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:20 GMT-03:00" name="testRegistration" data-provider="registrationData" finished-at="2025-07-31T22:58:27 GMT-03:00" duration-ms="6979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pedro Muñoz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[correo_invalido]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abc123!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Abc123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[13288292-4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[39555810-2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[email inválido]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion3_FlujoCriticoTest@28eaa59a]" started-at="2025-07-31T22:58:27 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:58:27 GMT-03:00" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.suite.test.Leccion3_FlujoCriticoTest -->
+    </test> <!-- Leccion3_Flujo_Critico -->
+    <test started-at="2025-07-31T22:58:27 GMT-03:00" name="Leccion7_Multiples_Datos_Chrome" finished-at="2025-07-31T22:58:44 GMT-03:00" duration-ms="17050">
+      <class name="com.suite.test.Leccion7_MultiplesDatosTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@5119fb47]" started-at="2025-07-31T22:58:27 GMT-03:00" name="setUp" finished-at="2025-07-31T22:58:31 GMT-03:00" duration-ms="3312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@5119fb47]" started-at="2025-07-31T22:58:31 GMT-03:00" name="testLogin" data-provider="loginData" finished-at="2025-07-31T22:58:35 GMT-03:00" duration-ms="3983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12.345.678-9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@5119fb47]" started-at="2025-07-31T22:58:35 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:58:35 GMT-03:00" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@5119fb47]" started-at="2025-07-31T22:58:35 GMT-03:00" name="setUp" finished-at="2025-07-31T22:58:38 GMT-03:00" duration-ms="2517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@5119fb47]" started-at="2025-07-31T22:58:38 GMT-03:00" name="testLogin" data-provider="loginData" finished-at="2025-07-31T22:58:44 GMT-03:00" duration-ms="6058" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12.345.678-9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@5119fb47]" started-at="2025-07-31T22:58:44 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:58:44 GMT-03:00" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.suite.test.Leccion7_MultiplesDatosTest -->
+    </test> <!-- Leccion7_Multiples_Datos_Chrome -->
+    <test started-at="2025-07-31T22:58:44 GMT-03:00" name="Leccion7_Multiples_Datos_Firefox" finished-at="2025-07-31T22:59:16 GMT-03:00" duration-ms="31623">
+      <class name="com.suite.test.Leccion7_MultiplesDatosTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@3835c46]" started-at="2025-07-31T22:58:44 GMT-03:00" name="setUp" finished-at="2025-07-31T22:58:55 GMT-03:00" duration-ms="10858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@3835c46]" started-at="2025-07-31T22:58:55 GMT-03:00" name="testLogin" data-provider="loginData" finished-at="2025-07-31T22:58:58 GMT-03:00" duration-ms="3048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12.345.678-9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@3835c46]" started-at="2025-07-31T22:58:58 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:59:00 GMT-03:00" duration-ms="1767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@3835c46]" started-at="2025-07-31T22:59:00 GMT-03:00" name="setUp" finished-at="2025-07-31T22:59:09 GMT-03:00" duration-ms="8806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,boolean)[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@3835c46]" started-at="2025-07-31T22:59:09 GMT-03:00" name="testLogin" data-provider="loginData" finished-at="2025-07-31T22:59:14 GMT-03:00" duration-ms="5583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12.345.678-9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.suite.test.Leccion7_MultiplesDatosTest@3835c46]" started-at="2025-07-31T22:59:14 GMT-03:00" name="tearDown" finished-at="2025-07-31T22:59:16 GMT-03:00" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.suite.test.Leccion7_MultiplesDatosTest -->
+    </test> <!-- Leccion7_Multiples_Datos_Firefox -->
+  </suite> <!-- AlkemyFunctionalSuite -->
 </testng-results>

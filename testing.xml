@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AlkemyFunctionalSuite" verbose="1">
+
+    <listeners>
+        <!-- Asegúrate que TestListener esté en este paquete -->
+        <listener class-name="com.suite.test.TestListener"/>
+    </listeners>
+
+    <test name="Leccion1_Validacion_Inicial">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.suite.test.Leccion1_ValidacionInicialTest"/>
+        </classes>
+    </test>
+
+    <test name="Leccion2_Scripts_Exportados">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.suite.test.Leccion2_SeleniumIDETest"/>
+        </classes>
+    </test>
+
+    <test name="Leccion3_Flujo_Critico">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!-- Aquí usamos el nombre nuevo de la clase -->
+            <class name="com.suite.test.Leccion3_FlujoCriticoTest"/>
+        </classes>
+    </test>
+
+    <test name="Leccion7_Multiples_Datos_Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!-- Y aquí también -->
+            <class name="com.suite.test.Leccion7_MultiplesDatosTest"/>
+        </classes>
+    </test>
+
+    <test name="Leccion7_Multiples_Datos_Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <!-- Y finalmente aquí -->
+            <class name="com.suite.test.Leccion7_MultiplesDatosTest"/>
+        </classes>
+    </test>
+</suite>
