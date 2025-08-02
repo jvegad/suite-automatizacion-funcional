@@ -1,29 +1,43 @@
-# Reporte Módulo 4: Suite Automatización Funcional
+# Reporte Módulo 4: Suite de Automatización Funcional
 
-## Integrantes
-*   **Viki Borda** (GitHub: McKingston01)
-*   **Josselyn Vega** (GitHub: jvegad)
+## 1. Integrantes y Distribución de Tareas
 
+*   **Josselyn Vega** (GitHub: [jvegad](https://github.com/jvegad))
+    *   *Responsable de Lecciones 1 y 2, integración completa del proyecto, y elaboración del reporte final.*
+*   **Viki Borda** (GitHub: [McKingston01](https://github.com/McKingston01))
+    *   *Responsable de Lecciones 3 a 7, implementando la arquitectura POM y las pruebas parametrizadas.*
+    
 ---
 
-## 1. Resumen del Proyecto
+## 2. Resumen del Proyecto
 
-<Pendiente>
+Este repositorio contiene una suite de pruebas de automatización funcional para una aplicación web. El objetivo principal es validar los flujos críticos de **registro de usuario** y **login**, asegurando la calidad y estabilidad del software ante distintos escenarios de datos.
+
+El proyecto está construido en **Java** y gestionado con **Maven**, utilizando **TestNG** como framework de ejecución. Se ha implementado el patrón de diseño **Page Object Model (POM)** para crear un código robusto, mantenible y escalable.
+
+La suite incluye funcionalidades avanzadas como:
+*   Pruebas parametrizadas con **DataProvider**.
+*   Ejecución **Cross-Browser** (Chrome y Firefox).
+*   Generación automática de **capturas de pantalla** en caso de fallo en las pruebas.
+*   Reportes de ejecución detallados a través de Maven Surefire.
 
 *   **Tecnologías Utilizadas:**
-    *   **Lenguaje:** Java (Versión 24)
+    *   **Lenguaje:** Java 17+
     *   **Gestión de Dependencias:** Apache Maven
-    *   **Framework de Pruebas:** JUnit 5
+    *   **Framework de Pruebas:** TestNG
+    *   **Automatización Web:** Selenium WebDriver
+    *   **Gestión de Drivers:** WebDriverManager
+    *   **Patrón de Diseño:** Page Object Model (POM)
 
 ---
 
-## 2. Instrucciones de Configuración y Ejecución
+## 3. Instrucciones de Configuración y Ejecución
 
 A continuación se detallan los pasos para clonar, compilar y probar el proyecto.
 
 ### Prerrequisitos
-*   JDK 24 (o compatible) instalado.
-*   Apache Maven instalado y configurado en el PATH del sistema.
+*   JDK 17 (o compatible) instalado.
+*   Apache Maven instalado y configurado en el `PATH` del sistema.
 *   Git instalado.
 
 ### Pasos para la Ejecución
@@ -35,7 +49,7 @@ A continuación se detallan los pasos para clonar, compilar y probar el proyecto
     ```
 
 2.  **Compilar y ejecutar las pruebas:**
-    El siguiente comando limpiará compilaciones anteriores, compilará el código y ejecutará todas las pruebas unitarias.
+    El siguiente comando limpiará compilaciones anteriores, compilará el código y ejecutará la suite de pruebas definida en `testing.xml`.
     ```bash
     mvn clean test
     ```
@@ -43,62 +57,53 @@ A continuación se detallan los pasos para clonar, compilar y probar el proyecto
 
 ---
 
-## 3. Desarrollo del Proyecto (Paso a Paso)
+## 4. Evidencias de Ejecución
 
-A continuación se describe el progreso por cada lección del módulo.
-**Josselyn Vega**: encargada de Lecciones 1 y 2 e integración del proyecto
-**Viki Borda**: encargada de lecciones 3 a 7
+*   🎥 **[Ver Video: Ejecución Completa Exitosa](https://youtu.be/DcSRxfhrPYo)**
+    *   *Muestra la ejecución completa de la suite de pruebas, finalizando con éxito.*
 
-### Lección 1: Testing Funcional con Selenium 
+*   🎥 **[Ver Video: Ejecución con Fallo y Captura de Pantalla](https://youtu.be/8VZ2kx5eRtA)**
+    *   *Demuestra cómo el `TestListener` captura una pantalla automáticamente cuando una aserción falla.*
 
-*   **Objetivo:** Comprender los fundamentos de Selenium y validar la instalación del entorno.
-*   **Métricas Cumplidas:**
-    *   `[X]` **1 prueba ejecutada:** Se realiza 1 prueba ejecutada con éxito.
-*   **Resultado:** Esta sección fue completada por la compañera de equipo.
+*   📋 **[Ver Reporte de Pruebas (Surefire)](target/surefire-reports/index.html)**
+    *   *Enlace al reporte HTML generado por Maven. Para verlo, primero ejecuta `mvn clean test` y luego abre este archivo en tu navegador.*
 
 ---
 
-### Lección 2: Prototipado con Selenium IDE 
+## 5. Desarrollo del Proyecto por Lecciones
 
-*   **Objetivo:** Capturar flujos básicos de forma rápida utilizando una herramienta de grabación y reproducción para futuras pruebas detalladas.
+El proyecto se desarrolló de forma colaborativa, integrando las contribuciones de ambas participantes en una única suite de pruebas funcional.
 
-*   **Métricas Cumplidas:**
-    *   `[X]` **2 scripts grabados:** Se grabaron los flujos de **Registro de Usuario** y **Login de Usuario**.
-    *   `[X]` **Exportación a código Java:** Ambos flujos fueron exportados a código Java utilizando el formato **TestNG**.
-    *   `[X]` **Navegador:** Firefox
+### Lección 1 y 2: Configuración Inicial y Prototipado 
+Se realizó la configuración inicial del proyecto Maven, la estructura de carpetas y la grabación de los flujos iniciales de Registro y Login utilizando **Katalon Recorder**. Estos scripts exportados sirvieron como base para la automatización manual.
 
-*   **Herramienta Utilizada:**
-    *   Se utilizó **Katalon Recorder** para grabar las interacciones del usuario en el sitio de práctica [automationexercise.com](https://www.automationexercise.com/).
+*   **Clases de prueba:** `Leccion1_ValidacionInicialTest.java`, `Leccion2_SeleniumIDETest.java`
+*   **Evidencia de scripts:** Se encuentran en `src/test/resources/scriptsExportados/`
 
-*   **Proceso Realizado:**
-    1.  **Grabación del Flujo de Registro:** Se registraron los pasos para crear una nueva cuenta de usuario, llenando los campos obligatorios del formulario.
-    2.  **Grabación del Flujo de Login:** Se grabó un segundo test para iniciar sesión con las credenciales creadas previamente.
-    3.  **Exportación y Almacenamiento:** Los scripts generados por la herramienta fueron exportados y almacenados en el directorio `src/test/resources/scriptsExportados` como evidencia y para su posterior refactorización en lecciones futuras.
-    4.  **Refactorización Inicial:** Los scripts exportados se unificaron y adaptaron en una única clase de prueba (`Leccion2_SeleniumIDETest.java`) para validar su correcta ejecución inicial.
+### Lección 3: Automatización de Flujos Críticos 
+Se implementó la prueba automatizada para el flujo de registro, cubriendo múltiples escenarios mediante un DataProvider.
 
-*   **Evidencia:**
-    *   Los scripts originales exportados se encuentran en la carpeta `src/test/resources/scriptsExportados/`.
-    *   La clase de prueba funcional se encuentra en `src/test/java/com/suite/test/Leccion2_SeleniumIDETest.java`.
+*   **Clase de prueba:** `Leccion3_FlujoCriticoTest.java`
+*   **DataProvider:** `RegistrationDataProvider.java`
 
----
-### Lección 3: Automatización de Flujos Críticos (Clase: `Leccion3_FlujoCriticoTest.java`)
-*   **Objetivo:** Validar los flujos de registro y login ante distintos escenarios.
-*   **Métricas Cumplidas:** Se automatizaron 4 escenarios de registro utilizando un DataProvider (`RegistrationDataProvider.java`), cubriendo casos de éxito, contraseña insegura, contraseñas no coincidentes y email inválido.
+### Lección 4: Interacción con Elementos Web 
+La implementación del Page Object Model demuestra el uso de diversas estrategias de localización (`By.xpath`, `By.cssSelector`) y esperas explícitas (`WebDriverWait`) para garantizar una interacción estable con los elementos web.
 
-### Lección 4: Interacción con Elementos Web
-*   **Objetivo:** Dominar la interacción con distintos tipos de elementos y su sincronización.
-*   **Evidencia:** La implementación del Page Object Model en las clases `LoginPage.java` y `RegisterPage.java` demuestra el uso de múltiples localizadores (`By.xpath`, `By.cssSelector`) y esperas explícitas (`WebDriverWait`) para interactuar de forma robusta con la aplicación.
+*   **Evidencia:** Clases en el paquete `com.suite.pages`.
 
-### Lección 5: Evidencias y Estructura POM
-*   **Objetivo:** Organizar el código bajo el patrón POM y capturar resultados de ejecución.
-*   **Métricas Cumplidas:**
-    *   `[X]` **Estructura POM:** Se implementaron 3 clases de página (`HomePage`, `LoginPage`, `RegisterPage`) que encapsulan la lógica de interacción.
-    *   `[X]` **Captura de Pantallas:** Se implementó un `TestListener` (`TestListener.java`) que toma una captura de pantalla automáticamente cada vez que una prueba falla, guardándola en la carpeta `/screenshots`.
+### Lección 5: Evidencias y Estructura POM 
+Se implementó y aplicó el patrón **Page Object Model (POM)** para organizar el código. Además, se configuró un `TestListener` para tomar **capturas de pantalla automáticamente** en cada fallo.
 
-### Lección 6: Ejecución Cross-Browser
-*   **Objetivo:** Ejecutar las pruebas en distintos navegadores.
-*   **Evidencia:** La clase `BaseTest.java` utiliza `WebDriverManager` y la anotación `@Parameters` para permitir la ejecución de pruebas en diferentes navegadores. El archivo `testing.xml` está configurado para lanzar las pruebas de login tanto en Chrome como en Firefox.
+*   **Estructura POM:** `HomePage`, `LoginPage`, `RegisterPage`.
+*   **Captura de Pantallas:** `TestListener.java`.
 
-### Lección 7: Pruebas con Múltiples Datos (Clase: `Leccion7_MultiplesDatosTest.java`)
-*   **Objetivo:** Parametrizar pruebas usando datos externos.
-*   **Métricas Cumplidas:** La prueba de login se ejecuta utilizando un `DataProvider` (`DataProviderClass.java`) que provee múltiples combinaciones de credenciales para validar escenarios de éxito y de fallo.
+### Lección 6: Ejecución Cross-Browser 
+La clase `BaseTest.java` fue configurada para permitir la ejecución de pruebas en múltiples navegadores (Chrome y Firefox), controlada a través de parámetros en el archivo `testing.xml`.
+
+*   **Evidencia:** `BaseTest.java` y `testing.xml`.
+
+### Lección 7: Pruebas con Múltiples Datos 
+Se implementó una prueba de login data-driven, que lee múltiples combinaciones de credenciales desde un `DataProvider` para validar los resultados esperados.
+
+*   **Clase de prueba:** `Leccion7_MultiplesDatosTest.java`
+*   **DataProvider:** `DataProviderClass.java`

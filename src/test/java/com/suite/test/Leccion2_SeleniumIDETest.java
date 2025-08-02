@@ -35,7 +35,7 @@ public class Leccion2_SeleniumIDETest {
         driver.findElement(By.name("name")).clear();
         driver.findElement(By.name("name")).sendKeys("test");
         driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/input[3]")).clear();
-        driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/input[3]")).sendKeys("testuser54320@test.com");
+        driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/input[3]")).sendKeys("testuser54322@test.com");
         driver.findElement(By.xpath("//section[@id='form']/div/div/div[3]/div/form/button")).click();
         driver.findElement(By.id("id_gender2")).click();
         driver.findElement(By.id("name")).click();
