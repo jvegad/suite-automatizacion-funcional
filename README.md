@@ -59,6 +59,9 @@ A continuación se detallan los pasos para clonar, compilar y probar el proyecto
 
 ## 4. Evidencias de Ejecución
 
+*   📋 **[Ver Capturas (Screenshots]([screenshots](screenshots))**
+    *   *Enlace a la carpeta de PNGs con capturas de los errores.*
+
 *   🎥 **[Ver Video: Ejecución Completa Exitosa](https://youtu.be/DcSRxfhrPYo)**
     *   *Muestra la ejecución completa de la suite de pruebas, finalizando con éxito.*
 
