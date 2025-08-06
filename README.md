@@ -59,7 +59,7 @@ A continuación se detallan los pasos para clonar, compilar y probar el proyecto
 
 ## 4. Evidencias de Ejecución
 
-*   📋 **[Ver Capturas (Screenshots)](https://github.com/jvegad/suite-automatizacion-funcional/screenshots)**
+*   📋 **[Ver Capturas (Screenshots)](https://github.com/jvegad/suite-automatizacion-funcional/tree/main/screenshots)**
     *   *Enlace a la carpeta de PNGs con capturas de los errores.*
 
 *   🎥 **[Ver Video: Ejecución Completa Exitosa](https://youtu.be/DcSRxfhrPYo)**
